@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ቀለም Quiz🔥 - Test Your Knowledge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div id="landing-container" class="container">
+        <div class="glass-box">
+            <h1>Welcome to <span class="highlight">ቀለም Quiz🔥</span></h1>
+            <p>Test your knowledge and prepare your self for your Exam!</p>
+            <h3>Select Difficulty Level:</h3>
+            <div class="button-group">
+                <button class="btn easy-btn" onclick="startQuiz('easy')">🟢 Easy</button>
+                <button class="btn medium-btn" onclick="startQuiz('medium')">🟡 Medium</button>
+                <button class="btn hard-btn" onclick="startQuiz('hard')">🔴 Hard</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quiz Page -->
+    <div id="quiz-container" class="container hidden">
+        <div class="glass-box">
+            <h2 id="quiz-title"></h2>
+            <p id="timer">⏳ Time Left: <span id="time-left">30</span>s</p>
+            <div id="question-container">
+                <h3 id="question"></h3>
+                <div id="answer-buttons"></div>
+                <p id="result"></p>
+                <button id="next-btn" class="btn hidden">Next</button>
+            </div>
+            <div class="progress-bar"><div id="progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Score Page -->
+    <div id="score-container" class="container hidden">
+        <div class="glass-box">
+            <h2>🎉 Quiz Completed!</h2>
+            <p id="final-score"></p>
+            <button class="btn restart-btn" onclick="restartQuiz()">🔄 Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
