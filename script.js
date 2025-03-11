@@ -140,3 +140,5 @@ function restartQuiz() {
     scoreContainer.classList.add("hidden");
     landingContainer.classList.remove("hidden");
 }
+
+
